@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header-section">
+        <div class="container">
+            <div class="header">
+                <div class="header-logo">
+                    <img class="header-logo__img" src="img/logo.svg" alt="HKinvision logo">
+                </div>
+
+                <nav class="navbar">
+                    <div class="navbar__wrap">
+                        <div class="hamb">
+                        <div class="hamb__field" id="hamb">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                        </div>
+                        <ul class="menu" id="menu">
+                        <li><a href="#sect1">Home</a></li>
+                        <li><a href="#sect2">Feature</a></li>
+                        <li><a href="#sect3">About</a></li>
+                        <li><a href="#fotr">Social</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="popup" id="popup"></div>
+
+
+                <a class="btn-primary header__btn" href="#">Manage Booking</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="banner-section">
+            <div class="container">
+                <div class="banner">
+                    <h2 class="banner__header">The World's Best Luxury Car Deals</h2>
+                    <p class="banner__text">HKinvestor can provide rentals of the most exclusive cars like Ferrari and Lamborghini.</p>
+                    <div class="banner-links-wrap">
+                        <a class="btn-primary banner__link">Buy Now</a>
+                        <button class="btn-secondary banner__btn">Video Introduction</button>
+                    </div>
+                    <div class="banner-features">
+                        <span class="banner-features__text"><strong class="banner-features__text_strong">500+</strong>Luxury Cars</span>
+                        <span class="banner-features__text"><strong class="banner-features__text_strong">#1</strong>Best Deal Car</span>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-img"></div>
+        </section>
+        <section class="sec3">
+            <div class="container">
+                <div class="info">
+                        <div class="info-header">
+                            <button class="info-header-tab active">Supercars</button>
+                            <button class="info-header-tab">Sportcars</button>
+                            <button class="info-header-tab">Supersev</button>
+                        </div>
+                        <div class="info-tabcontent fade">
+                            <div class="photo">
+                                <img class="bagas" src="./img/Mask.png" alt="Massage" />
+                            </div>
+                            <div class="photo">
+                                <img class="bagas" src="./img/image 23.png" />
+                            </div>
+                            <div class="photo">
+                                <img class="bagas" src="./img/image 24.png" alt="Massage" />
+                            </div>
+                        </div>
+                        <div class="info-tabcontent fade">
+                            <div class="photo">
+                                <img class="bagas" src="./img/image 25.png" alt="Massage" />
+                            </div>
+                            <div class="photo">
+                                <img class="bagas" src="./img/image 27.png" />
+                            </div>
+                            <div class="photo">
+                                <img class="bagas" src="./img/image 26.png" alt="Massage" />
+                            </div>
+                        </div>
+                        <div class="info-tabcontent fade">
+                            <div class="photo">
+                                <img class="bagas" src="./img/image 31.png" alt="Massage" />
+                            </div>
+                            <div class="photo">
+                                <img class="bagas" src="./img/image 33.png" />
+                            </div>
+                            <div class="photo">
+                                <img class="bagas" src="./img/image 35.png" alt="Massage" />
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section id="services-section">
+            <div class="container">
+                <h2 class="title-section services-section__title">Our Other Services</h2>
+
+                <div class="slider">
+                    <div class="slider__container">
+                        <img src="./img/services_1.jpg" alt="" class="slider__image fade" />
+                    </div>
+                    <div class="slider__controls">
+                        <button class="slider__nav slider__nav-left">&lt;&lt;&lt;</button>
+                        <button class="slider__nav slider__nav-right">&gt;&gt;&gt;</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="destination-section">
+            <div class="container">
+                <h2 class="title-section destination-section__title">Popular Destination for Car Rentals</h2>
+                <div class="destination-wrap">
+
+                    <div class="myBtnContainer">
+                        <button1 class="btn active" onclick="filterSelection('all')">All</button1>
+                        <button1 class="btn" onclick="filterSelection('aa')">London</button1>
+                        <button1 class="btn" onclick="filterSelection('bb')">Madrid</button1>
+                        <button1 class="btn" onclick="filterSelection('cc')">Paris</button1>
+                        <button1 class="btn" onclick="filterSelection('dd')">Dubai</button1>
+                        <button1 class="btn" onclick="filterSelection('ee')">Roma</button1>
+                        <button1 class="btn" onclick="filterSelection('ff')">Jakarta</button1>
+                    </div>
+                    <div class="container1">
+                        <div class="filterDiv aa">
+                            <div class="destination">
+                        <img class="destination__img" src="img/destination_1.jpg" alt="Destination to London">
+                        <div class="destination-info">
+                            <h3 class="destination__title">London</h3>
+                            <p class="destination__text">Car hire in 75 pick-up locations</p>
+                            <b class="destination__price">From $ 669,00 per day</b>
+                            <a class="destination__link" href="#">Search rental cars in London</a>
+                        </div>
+                            </div>
+                        </div>
+                        <div class="filterDiv bb"><div class="destination">
+                        <img class="destination__img" src="img/destination_2.jpg" alt="Destination to Madrid">
+                        <div class="destination-info">
+                            <h3 class="destination__title">Madrid</h3>
+                            <p class="destination__text">Car hire in 75 pick-up locations</p>
+                            <b class="destination__price">From $ 799,00 per day</b>
+                            <a class="destination__link" href="#">Search rental cars in Madrid</a>
+                        </div>
+                    </div> </div>
+                        <div class="filterDiv cc"><div class="destination">
+                        <img class="destination__img" src="img/destination_3.jpg" alt="Destination to Paris">
+                        <div class="destination-info">
+                            <h3 class="destination__title">Paris</h3>
+                            <p class="destination__text">Car hire in 75 pick-up locations</p>
+                            <b class="destination__price">From $ 899,00 per day</b>
+                            <a class="destination__link" href="#">Search rental cars in Paris</a>
+                        </div>
+                    </div> </div>
+                        <div class="filterDiv dd"><div class="destination">
+                        <img class="destination__img" src="img/destination_4.jpg" alt="Destination to Dubai">
+                        <div class="destination-info">
+                            <h3 class="destination__title">Dubai</h3>
+                            <p class="destination__text">Car hire in 75 pick-up locations</p>
+                            <b class="destination__price">From $ 669,00 per day</b>
+                            <a class="destination__link" href="#">Search rental cars in Dubai</a>
+                        </div>
+                    </div> </div>
+                        <div class="filterDiv ee"><div class="destination">
+                        <img class="destination__img" src="img/destination_5.jpg" alt="Destination to Roma">
+                        <div class="destination-info">
+                            <h3 class="destination__title">Roma</h3>
+                            <p class="destination__text">Car hire in 75 pick-up locations</p>
+                            <b class="destination__price">From $ 799,00 per day</b>
+                            <a class="destination__link" href="#">Search rental cars in Roma</a>
+                        </div>
+                    </div> </div>
+                        <div class="filterDiv ff"><div class="destination">
+                        <img class="destination__img" src="img/destination_6.jpg" alt="Destination to Jakarta">
+                        <div class="destination-info">
+                            <h3 class="destination__title">Jakarta</h3>
+                            <p class="destination__text">Car hire in 75 pick-up locations</p>
+                            <b class="destination__price">From $ 899,00 per day</b>
+                            <a class="destination__link" href="#">Search rental cars in Jakarta</a>
+                        </div>
+                    </div> </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+        <section id="location-section">
+            <div class="container">
+                <h2 class="title-section">Location</h2>
+                <img class="location-img" src="img/location_map.jpg" alt="HKinvision address">
+            </div>
+        </section>
+        <section id="faq-section">
+            <div class="container">
+                <h2 class="title-section">FAQ</h2>
+                <div id="accordion" class="accordion">
+                    <p class="accordion-head">Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
+                    <div class="accordion-block">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure unde
+                        sunt atque ex dolor voluptate aut? Ipsam numquam, soluta consequatur
+                        officia, beatae, minima eius velit quas perferendis cumque tenetur
+                        exercitationem.
+                    </div>
+                </div>
+                <div id="accordion" class="accordion">
+                    <p class="accordion-head">Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
+                    <div class="accordion-block">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure unde
+                        sunt atque ex dolor voluptate aut? Ipsam numquam, soluta consequatur
+                        officia, beatae, minima eius velit quas perferendis cumque tenetur
+                        exercitationem.
+                    </div>
+                </div>
+                <div id="accordion" class="accordion">
+                    <p class="accordion-head">Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
+                    <div class="accordion-block">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure unde
+                        sunt atque ex dolor voluptate aut? Ipsam numquam, soluta consequatur
+                        officia, beatae, minima eius velit quas perferendis cumque tenetur
+                        exercitationem.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer-section">
+            <div class="container">
+                <div class="footer">
+                    <div class="footer-about">
+                        <div class="footer-logo-wrap">
+                            <img class="footer-about__img" src="img/logo.svg" alt="HKinvision logo">
+                            <h3 class="footer-about__header">HKinvision</h3>
+                        </div>
+                        <p class="footer-about__text">The World's Best Luxury Car’s Dealing Platform</p>
+                    </div>
+                    <div class="footer-nav-wrap">
+                        <div class="footer-nav">
+                            <h3 class="footer-nav__header">Company</h3>
+                            <ul class="footer-nav__list">
+                                <li class="footer-nav__item">
+                                    <a class="footer-nav__link" href="#">About Us</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a class="footer-nav__link" href="#">Product</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a class="footer-nav__link" href="#">Testimonial</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-nav">
+                            <h3 class="footer-nav__header">Support</h3>
+                            <ul class="footer-nav__list">
+                                <li class="footer-nav__item">
+                                    <a class="footer-nav__link" href="#">FAQ</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a class="footer-nav__link" href="#">Privacy Policy</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a class="footer-nav__link" href="#">Terms of Services</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-nav">
+                            <h3 class="footer-nav__header">Category</h3>
+                            <ul class="footer-nav__list">
+                                <li class="footer-nav__item">
+                                    <a class="footer-nav__link" href="#">Super Cars</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a class="footer-nav__link" href="#">Sport Cars</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a class="footer-nav__link" href="#">More Cars</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-social">
+                        <a class="footer-social__link" href="#"></a>
+                        <a class="footer-social__link" href="#"></a>
+                        <a class="footer-social__link" href="#"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    <p class="footer-copyright__text">©2022 HKInvestor. All right reserved</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <div class="cookies" id="cookies">
+        <div class="cookies__descr">
+            If you use us site, you auto agree that
+            <a class="cookies__link" href="#">we use cookies</a>
+        </div>
+        <div class="cookies__btn" id="cookies__btn">OK</div>
+    </div>
+</div>
+<script src="code/codeee.js"></script>
+</body>
+</html>
